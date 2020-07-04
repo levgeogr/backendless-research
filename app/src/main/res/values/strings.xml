@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Backendless Research</string>
+    <string name="title_persons">Persons</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="name">Name</string>
+    <string name="age">Age</string>
+    <string name="done">Done</string>
+</resources>

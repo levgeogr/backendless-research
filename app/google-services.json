@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "728303730320",
+    "firebase_url": "https://backendless-research.firebaseio.com",
+    "project_id": "backendless-research",
+    "storage_bucket": "backendless-research.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:728303730320:android:7f3d53850bdb2b02262215",
+        "android_client_info": {
+          "package_name": "com.levgeogr.backendlessresearch"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "728303730320-ub8aqst9qnjng4e36b8emvt1opmf67fu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDq_koZk8McEeZ38z6U_-iGn7pxTFebdKQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "728303730320-ub8aqst9qnjng4e36b8emvt1opmf67fu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
