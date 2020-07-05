@@ -30,7 +30,7 @@ class PersonsViewModel : CustomVM(), AsyncCallback<Person> {
     }
 
     fun addPerson(name: String, age: Int) {
-        val person = Person(name, age)
+        val person = Person(name = name, age = age)
         ioScope.launch {
             val savedPerson =
                 Backendless.Data.of(Person::class.java).save(person, this@PersonsViewModel)
