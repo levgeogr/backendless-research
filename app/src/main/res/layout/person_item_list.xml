@@ -1,22 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:padding="8dp"
-    xmlns:tools="http://schemas.android.com/tools">
+    android:padding="8dp">
 
     <TextView
         android:id="@+id/person_name_item"
-        android:textColor="@android:color/black"
-        android:textSize="20sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:text="Person name"/>
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="8dp"
+        android:layout_toStartOf="@+id/delete_person_btn"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        tools:text="Person name" />
 
     <TextView
         android:id="@+id/person_age_item"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:text="25"/>
-</LinearLayout>
+        android:layout_below="@+id/person_name_item"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="8dp"
+        tools:text="25" />
+
+    <ImageView
+        android:id="@+id/delete_person_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:padding="8dp"
+        android:src="@drawable/ic_delete"
+        android:textSize="25sp" />
+</RelativeLayout>

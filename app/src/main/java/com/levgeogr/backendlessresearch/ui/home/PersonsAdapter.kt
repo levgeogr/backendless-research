@@ -8,13 +8,15 @@ import com.levgeogr.backendlessresearch.R
 import com.levgeogr.backendlessresearch.api.models.Person
 import kotlinx.android.synthetic.main.person_item_list.view.*
 
-class PersonsAdapter : RecyclerView.Adapter<PersonsAdapter.VH>() {
+class PersonsAdapter(val personClickListener: PersonClickListener? = null) :
+    RecyclerView.Adapter<PersonsAdapter.VH>() {
 
     private val items = arrayListOf<Person>()
 
     fun setList(persons: List<Person>) {
         this.items.clear()
         this.items.addAll(persons)
+        notifyDataSetChanged()
     }
 
     override fun getItemCount() = items.size
@@ -35,7 +37,8 @@ class PersonsAdapter : RecyclerView.Adapter<PersonsAdapter.VH>() {
         fun bind(person: Person) {
             itemView.person_name_item.text = person.name
             itemView.person_age_item.text = person.age.toString()
-
+            itemView.person_name_item.setOnClickListener { personClickListener?.personClicked(person) }
+            itemView.delete_person_btn.setOnClickListener { personClickListener?.personDelete(person) }
         }
     }
 }

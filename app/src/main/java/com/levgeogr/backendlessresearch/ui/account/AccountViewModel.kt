@@ -1,10 +1,10 @@
-package com.levgeogr.backendlessresearch.ui.notifications
+package com.levgeogr.backendlessresearch.ui.account
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModel
+import com.levgeogr.backendlessresearch.utils.CustomVM
 
-class NotificationsViewModel : ViewModel() {
+class AccountViewModel : CustomVM() {
 
     private val _text = MutableLiveData<String>().apply {
         value = "This is notifications Fragment"
