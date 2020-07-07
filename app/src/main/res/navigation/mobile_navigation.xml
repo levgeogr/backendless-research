@@ -20,6 +20,15 @@
     <fragment
         android:id="@+id/navigation_account"
         android:name="com.levgeogr.backendlessresearch.ui.account.AccountFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_account" />
+        android:label="@string/title_account"
+        tools:layout="@layout/fragment_account" >
+        <action
+            android:id="@+id/action_navigation_account_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.levgeogr.backendlessresearch.ui.account.auth.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" />
 </navigation>
