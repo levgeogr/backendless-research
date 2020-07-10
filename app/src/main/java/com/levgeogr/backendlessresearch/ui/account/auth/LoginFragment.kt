@@ -21,8 +21,10 @@ class LoginFragment : Fragment(), ILoginView {
         savedInstanceState: Bundle?
     ): View? {
         binding = FragmentLoginBinding.inflate(inflater, container, false)
-        binding.vm = vm
-        binding.lifecycleOwner = this
+        binding.apply {
+            vm = this@LoginFragment.vm
+            lifecycleOwner = this@LoginFragment
+        }
 
         return binding.root
     }
